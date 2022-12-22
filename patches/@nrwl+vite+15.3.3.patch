@@ -1,0 +1,13 @@
+diff --git a/node_modules/@nrwl/vite/src/executors/build/build.impl.js b/node_modules/@nrwl/vite/src/executors/build/build.impl.js
+index 65a222d..fae65c6 100644
+--- a/node_modules/@nrwl/vite/src/executors/build/build.impl.js
++++ b/node_modules/@nrwl/vite/src/executors/build/build.impl.js
+@@ -21,7 +21,7 @@ async function viteBuildExecutor(options, context) {
+             outputPath: options.outputPath,
+             assets: [
+                 {
+-                    input: '.',
++                    input: projectRoot,
+                     output: '.',
+                     glob: 'package.json'
+                 }
